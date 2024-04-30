@@ -1,0 +1,389 @@
+/* #positions
+.flex{
+    display: flex;
+    box-sizing: border-box;
+}
+.row{
+    flex-direction: row;
+    justify-content: center;
+}
+.col{
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.justify-space{
+    justify-content: space-between;
+}
+
+/* #maindivs */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+.container{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.leftnavbar{
+    width: 100%;
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+}
+.personal{
+
+}
+.username h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.userjob h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.578);
+}
+.features{
+
+}
+.features ul{
+    list-style-type: none;
+    justify-content: center;
+}
+.features ul li{
+    padding: 8px 0;
+    color: black;
+}
+.features li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.features li a:hover{
+    background-color: rgb(6, 103, 71);
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.mainbar{
+    flex: 0.8;
+    background-color: #eae7e7b0;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.wraps{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.headertext{
+    font-weight: 500;
+    color: rgb(61, 159, 127);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.headertext span{
+    color: rgba(65, 62, 62, 0.612);
+}
+.maincontent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+
+}
+
+.search-container{
+    box-sizing: border-box;
+}
+.search-container input{
+    border-radius: 15px;
+    padding: 9px;
+    background-color: rgba(239, 244, 249, 0.596);
+    border: 1px solid rgba(185, 207, 229, 0.838);
+}
+
+.left{
+    flex: 0.7;
+}
+
+.project-features{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.my-projects{
+    flex: 0.5;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.pro-header{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.project-features .head{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+.flexibility{
+    padding: 8px;
+    background-color: bisque;
+    font-size: 8px;
+    border-radius: 14px;
+    font-weight: 600;
+}
+.revision{
+    padding: 8px;
+    background-color: aquamarine;
+    font-size: 8px;
+    border-radius: 14px;
+    font-weight: 600;
+}
+.general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+
+
+
+
+
+.priority-projects{
+    flex: 0.5;
+}
+.priority-cocntents{
+    background-color: #ffffff;
+    border-radius: 12px ;
+}
+.priority-head{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    padding: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.head-text{
+    font-size: 14px;
+    padding: 8px;
+
+}
+.date{
+    font-size: 14px;
+    padding: 8px;
+}
+.percent{
+    align-items: center;
+    padding-left: 20px;
+}
+
+.right{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.complete-rate{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    gap: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.completed{
+    background-color: #eae7e7b0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.uncompleted{
+    background-color: #eae7e7b0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 5px 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+.num h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.perfomance .completed{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.team-members{
+    background-color: #ffffff;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wrap-head{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+.title{
+    font-weight: 600;
+}
+.team-contents{
+  box-sizing: border-box;
+  padding-top: 12px;
+}
+.team-contents .conts{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.details{
+    font-size: 14px;
+}
+.addtask{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    border: 1px solid aquamarine;
+    padding: 6px 10px;
+    border-radius: 10px;
+
+}
+.addtask h3{
+    font-size: 14px;
+}
+.addtask:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    color: #ffffff;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* .images */
+.chart img{
+    width: 650px;
+    height: 200px;
+    border-radius: 20px;
+}
+.comp img{
+     width: 35px;
+     height: 35px;
+}
+.delete img{
+    width: 15px;
+    height: 15px;
+}
+
+
+.imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+} 
+.plus img{
+    width: 15px;
+    height: 15px;
+}
+.logout{
+    background-color: rgb(23, 182, 129);
+    border-radius: 12px;
+    padding: 0.6rem;
+    text-align: center;
+    color: #ffffff;
+}
+.percent img{
+    width: 160px;
+    height: 160px;
+}
+
+.dashboard a{
+    background-color: rgb(6, 103, 71);
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+.text{
+    font-size: 12px;
+}

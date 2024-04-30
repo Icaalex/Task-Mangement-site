@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+.container{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.leftnavbar{
+    width: 100%;
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+}
+.personal{
+
+}
+.username h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.userjob h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.578);
+}
+.features{
+
+}
+.features ul{
+    list-style-type: none;
+    justify-content: center;
+}
+.features ul li{
+    padding: 8px 0;
+}
+.features li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+.features li a:hover{
+    background-color: rgb(6, 103, 71);
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+.task a{
+    background-color: rgb(6, 103, 71);
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+
+.mainbar{
+    flex: 0.8;
+    background-color: #eae7e7b0;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.wraps{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.headertext{
+    font-weight: 500;
+    color: rgb(61, 159, 127);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.headertext span{
+    color: rgba(65, 62, 62, 0.612);
+}
+.maintask{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+
+}
+.contents{
+    box-sizing: border-box;
+    padding: 1rem;
+
+}
+.contents-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table,th, tr,th,td{
+    width: 100%;
+    padding: 15px;
+    color: #615f5fcb;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+}
+th{
+    font-weight: 700;
+    font-size: 17px;
+}
+th,td{
+    text-align: left;
+}.m1{
+    text-decoration: underline;
+}
+
+
+
+
+
+.search-container{
+    box-sizing: border-box;
+}
+.search-container input{
+    border-radius: 15px;
+    padding: 9px;
+    background-color: rgba(239, 244, 249, 0.596);
+    border: 1px solid rgba(185, 207, 229, 0.838);
+}
+.logout{
+    background-color: rgb(23, 182, 129);
+    border-radius: 12px;
+    padding: 0.6rem;
+    text-align: center;
+    color: #ffffff;
+}
+.addtask{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+
+}
+.addtask h3{
+    font-size: 14px;
+}
+.addtask:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    color: #ffffff;
+    justify-content: center;
+}
+.plus img{
+    width: 15px;
+    height: 15px;
+}
+.maintask{
+
+}
